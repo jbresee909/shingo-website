@@ -1,0 +1,222 @@
+<article>
+    <style>
+        #titleblock {
+            width: 100vw;
+            height: 350px;       
+            margin: 0;
+            display: inline-block;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            background: url(https://res.cloudinary.com/shingo/image/upload/v1560973296/WebContent/BG-ShingoShowcase_-LandingPage-HDR.jpg) no-repeat;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        #titleinfo {
+            text-align: center;
+            padding:2em;
+            padding-left:50px;
+            padding-right:50px;
+            margin-top:1.5em;
+          
+        }
+
+        #disruptor {
+            background-color:#fbf469;
+            text-align:center;
+        }
+
+        .registerbutton {
+            width: 250px;
+            height: 50px;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            background: #640921;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .redregister {
+            background: rgba(100, 9, 33, .85);
+        }
+
+        .redregister:hover {
+            background: rgba(100, 9, 33, 1)
+        }
+
+        .yellowregister {
+            background: #b17c31;
+            margin: 10px 0;
+            text-align: center;
+            margin-left:27%;
+        }
+
+        .yellowregister:hover {
+            background: #c18c41;
+        }
+
+        #quotecontent {
+            min-height: 15vh;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding:1em;
+        }
+
+        #quote {
+            color: white; 
+            font-size: 30px; 
+            width: 90%; 
+            max-width: 850px;
+            margin-top: 5vh;
+            padding:1em;
+        }
+
+        #person-quoted {
+            color: white; 
+            font-size: 20px; 
+            width: 90%; 
+            max-width: 850px;
+            margin-bottom: 10vh;
+        }
+
+        #contentblock {
+            width: 100vw;
+            max-width: 1100px;
+            margin: 0 auto;
+            display: inline-block;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding:2em;
+        }
+
+        #infolist {
+            list-style: disc inside;
+        }
+
+        div.showcase-block {
+            display: inline-block;
+            width: 40%;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid black;
+            text-align: center;   
+
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            padding-top: 2em;
+            font-size: 30px;
+            text-align: center;
+            display:inline-block;
+                 
+        }
+
+        .showcase-card {
+            background-color: rgba(255, 255, 255, 0.8);      
+            padding-top: 1em;
+            font-size: 30px;
+            text-align: center;
+            display:inline-block;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+            transition: 0.3s;
+            width: 550px;
+            margin:.25em;
+        }
+        .nowrap {
+            white-space: nowrap;
+            
+        }
+
+        .bold {
+            font-weight: 800;
+            padding-top:1em;
+        }
+        
+
+        @media only screen and (max-width: 1100px) {
+            #contentblock {
+                justify-content: center;
+            }
+            #quotecontent {
+                justify-content: center;
+            }
+
+            #quote {
+                text-align: center;
+            }
+
+
+            
+        }
+        @media only screen and (max-width: 768px) {
+            #titleinfo h1 {
+                font-size: 8vmin;
+            }
+            #titleinfo h3 {
+                font-size: 5vmin;
+            }
+            #titleinfo h4 {
+                font-size: 4vmin;
+            }
+        }
+        }
+
+    </style>
+
+    <!-- IMAGE BLOCK -->
+    <div id="titleblock">
+        <div id="titleinfo">     
+            <div>
+                <h2 style="color:white;">One-Day Showcase of Operational Excellence</h2>
+                <img src="https://res.cloudinary.com/shingo/image/upload/v1560973705/WebContent/Showcase_Logo_white.png" width="300px"> 
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT BLOCK -->
+     <div id="titleinfo">   
+        <h2>Bring your CI team </h2><h4 style="padding-right: 6em; padding-left:6em; text-align:center;">Refresh your training and your mental picture of "great," all in one value-packed day. </h4>
+        <h5>(Groups of 3+ receive a 20% discount.)</h5>
+        <div class="grid-item"><img src="https://img.icons8.com/ios/50/000000/search.png"><h3>Inside Look</h3><h5>Take a two-and-a-half hour tour through <br>a Shingo award recipient company that <br>exemplifies operational excellence.</h5></div>  
+        <div class="grid-item"><img src="https://img.icons8.com/ios/64/000000/scuba-diving.png"><h3 class="nowrap">Deep Dive</h3><h5>Talk with company leaders<br>about their continuous improvement journey,<br> missteps, and break-throughs.</h5></div> 
+        <div class="grid-item"><img src="https://img.icons8.com/wired/64/000000/training.png"><h3 class="nowrap">Training</h3><h5>Experience the 4-hour <br>Shingo Overview workshop <br>from a seasoned instructor.</h5></div>              
+    </div>
+    <!-- CONTENT BLOCK -->
+    <div id="titleinfo">    
+        <div class="showcase-card">
+            <img src="https://res.cloudinary.com/shingo/image/upload/v1560980033/WebContent/Denso.png">
+            <h4 id="disruptor">Registration closes January 13</h4>
+            <h4 class="bold">Shingo Showcase at DENSO</h4>
+            <h5 class="bold">January 28, 2019 | Maryville, TN</h5>
+            <p style="padding:1em; font-size:18px">DENSO is one of the largest global automotive suppliers of advanced technology, systems, and components. 
+                From advanced safety systems for automated driving to hybrid and electric vehicle components, 
+                they craft the core technologies of modern mobility.</p>
+                <div class="registerbutton yellowregister">
+                    <a href='http://www.cvent.com/events/2019-shingo-showcase-at-denso/event-summary-94c9716effe3466985b7b89a95ce3cab.aspx' target='_blank'><h4 style="color: white;">LEARN MORE</h4></a>
+                </div>
+        </div>              
+    </div>
+</article>
+
+<!--
+<div class="registerbutton yellowregister">
+                <a href='http://www.cvent.com/events/2019-shingo-manufacturing-summit/event-summary-e895e7f661d24878b5154399e039b9c7.aspx'><h4 style="color: white;">REGISTER NOW</h4></a>
+            </div>
+
+-->

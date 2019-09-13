@@ -1,0 +1,115 @@
+<article class="container" id="recipients">
+    <div class="row">
+        <div class="twelve centered text-center columns">
+            <img src="https://res.cloudinary.com/shingo/image/upload/c_scale,h_250/v1489102402/WebDesign/Logos/Shingo-Prize-Logo-2017.png"
+            />
+        </div>
+        <div class="row">
+            <div class="nine centered text-center columns">
+                <h3 class="quattrocento">The Shingo Prize is the world’s highest standard for operational excellence.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <p>The Shingo Prize is based on a complete assessment of an organization’s culture and how well it drives world-class
+                results. Shingo examiners focus on the degree to which the <em>Shingo Guiding Principles</em> of the
+                <em>Shingo Model™</em> are evident in the behavior of every employee. The examiners observe behavior and
+                determine the frequency, duration, intensity and scope of the desired principle-based behavior. They also
+                observe the degree to which leaders focus on principles and culture, and managers focus on aligning systems
+                to drive ideal behaviors at all levels.</p>
+            <p>This focus is unique in the world and is the most rigorous way to determine whether an organization is fundamentally
+                improving for the long-term, or just going through the motions of another flavor-of-the-month initiative.</p>
+            {{!-- <div class="row text-center">
+                <img src="https://res.cloudinary.com/shingo/image/upload/c_crop,g_west,h_197,w_145/c_scale,h_105/v1421100749/Shingo_Prize_Web_q8vq0p.png">                &nbsp; &nbsp;
+                <img src="https://res.cloudinary.com/shingo/image/upload/c_scale,w_95/v1433881373/2015_April-Silver_Medallion_Only_fgn7n4.png">                &nbsp; &nbsp;
+                <img src="https://res.cloudinary.com/shingo/image/upload/c_scale,w_95/v1433881373/2015_April-Bronze_Medallion_Only_oshqky.png">                &nbsp; &nbsp;
+            </div> --}}
+            <p>Organizations that receive Shingo recognition fall into three categories:</p>
+            <ul class="square">
+                <li><strong>Shingo Prize</strong> - a worldwide recognized symbol of an organization’s successful establishment
+                    of a culture anchored on principles of enterprise excellence</li>
+                <li><strong>Shingo Silver Medallion</strong> - organizations maturing on the journey with primary focus on tools
+                    and systems for improvement</li>
+                <li><strong>Shingo Bronze Medallion</strong> – organizations in the earlier stages of cultural transformation
+                    with primary focus on tools for improvement</li>
+            </ul>
+        </div>
+        <div class="row text-center">
+            <h3 class="quattrocento"><em>Learn more about challenging for the <a href="./challengefortheprize">Shingo Prize</a>.</em></h3>
+            <h5 class="quattrocento">Also check out the <a href="/researchaward">Shingo Research Award</a> and <a href="/publicationaward">Shingo Publication Award</a></h5>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <section class="vertical tabs row">
+            <ul class="tab-nav two columns">
+                <li class="active"><a href="#">Shingo Prize</a></li>
+                <li><a href="#">Silver</a></li>
+                <li><a href="#">Bronze</a></li>
+                <!-- <li><a href="#">Research</a></li>
+              <li><a href="#">Historical Data</a></li> -->
+            </ul>
+            <div class="tab-content active ten columns">
+                <table class="striped">
+                    <tbody>
+                        <tr>
+                            <td colspan="4">
+                                <h3 class="roboto"><strong>Shingo Prize</strong> Recipients</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td>Date</td>
+                          <td>Name - <em>Click for Profile Sheet</em></td>
+                          <td style="width: 20%; text-align: center;">Press Release</td>
+                          <td>Location</td>
+                        </tr>
+                        {{#each shingoAwards}}
+                            {{>_recipient-table this}}
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-content ten columns">
+                <table class="striped">
+                    <tbody>
+                        <tr>
+                            <td colspan="4">
+                                <h3 class="roboto"><strong>Silver Medallion</strong> Recipients</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td>Date</td>
+                          <td>Name - <em>Click for Profile Sheet</em></td>
+                          <td style="width: 20%; text-align: center;">Press Release</td>
+                          <td>Location</td>
+                        </tr>
+                        {{#each silverAwards}}
+                            {{>_recipient-table this}}
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-content ten columns">
+                <table class="striped">
+                    <tbody>
+                        <tr>
+                            <td colspan="4">
+                                <h3 class="roboto"><strong>Bronze Medallion</strong> Recipients</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td>Date</td>
+                          <td>Name - <em>Click for Profile Sheet</em></td>
+                          <td style="width: 20%; text-align: center;">Press Release</td>
+                          <td>Location</td>
+                        </tr>
+                        {{#each bronzeAwards}}
+                            {{>_recipient-table this}}
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-center"><a target="_blank" href="https://usu.box.com/v/ArchivedRecipients">
+            <em>View Full Recipient List</em></a></p>
+        </section>
+    </div>
+</article>

@@ -1,0 +1,39 @@
+<!-- InstanceBeginEditable name="main" -->
+<article class="container" id="academy">
+	<div class="row">
+		<div class="nine centered columns text-center">
+			<h2 class="quattrocento">Shingo Academy</h2>
+			<hr>
+			<p>Membership in the Shingo Academy is an honor bestowed upon individuals who have distinguished themselves 
+				in careers of operational excellence. Members of the Academy enrich the events of the Shingo Institute 
+				by attending and by providing contacts for speakers, site tours, research, and advice. 
+				Think of the Shingo Academy as the Lean Hall of Fame.</p>
+ 			<p>New members are inducted into the Shingo Academy each year. To nominate an individual to 
+				 the Shingo Academy, please complete the following <a href="https://res.cloudinary.com/shingo/raw/upload/v1559673613/WebContent/Academy_Nomination_Form.docx" download="nomination form">form</a> 
+				 and send it to Ken Snyder,<a href="mailto:ken.snyder@usu.edu"> ken.snyder@usu.edu</a>, Executive Director 
+				 of the Shingo Institute.</p>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<table class="striped">
+			<thead>
+				<tr>
+					<th>Member</th>
+					<th>Position</th>
+					<th>Company</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each academy}}
+					<tr>
+						<td>{{Name}}</td>
+						<td>{{Title}}</td>
+						<td>{{Account.Name}}</td>
+					</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
+</article>
+<!-- InstanceEndEditable -->

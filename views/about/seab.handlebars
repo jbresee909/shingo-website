@@ -1,0 +1,42 @@
+<!-- InstanceBeginEditable name="main" -->
+<article class="container" id="seab">
+	<div class="row">
+		<div class="nine centered columns text-center">
+			<h2 class="quattrocento">Shingo Executive Advisory Board</h2>
+			<hr>
+			<p>The Shingo Executive Advisory Board consists of outstanding leaders from a wide variety of organizations and industries who have established themselves in their careers as principle-centered leaders building cultures of excellence. Members are chosen
+				based on their expertise, commitment to, and willingness to endorse, and promote the principles and mission of the Shingo Institute. In their role as board members, they provide valuable insights, feedback and guidance regarding the work and direction
+				of the Shingo Institute.</p>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<ul class="two_up tiles">
+			{{#each members}}
+				<li>
+					<div class="row">
+						<div class="six columns">
+							<img src="{{Photograph__c}}" alt="{{Name}}">
+						</div>
+						<div class="six columns">
+							<h5><strong>{{Name}}</strong></h5>
+							<br>
+							<p>{{Title}}
+								<br><strong>{{Account.Name}}</strong></p>
+							<p><a href="#" class="switch" gumby-trigger="#{{Id}}">About</a></p>
+						</div>
+						<div class="modal" id="{{Id}}">
+							<div class="content">
+								{{{Biography__c}}}
+								<div class="text-center">
+									<p class="btn secondary medium"><a href="#" class="switch active" gumby-trigger="|.modal">Close</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			{{/each}}
+		</ul>
+	</div>
+</article>
+<!-- InstanceEndEditable -->

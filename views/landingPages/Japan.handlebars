@@ -1,0 +1,236 @@
+<article>
+    <style>
+        h1{
+            font-weight:500;
+        }
+
+        #titleblock {
+            width: 100vw;
+            height: 40vh;
+            min-height: 350px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            background: url(https://res.cloudinary.com/shingo/image/upload/v1563305442/WebContent/dark-decoration-design-pexels.jpg) no-repeat fixed top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+            text-align: center;
+        }
+
+        #titleinfo {
+            text-align: center;
+            padding:1em;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .registerbutton {
+            width: 250px;
+            height: 50px;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            background: #640921;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .redregister {
+            background: rgba(100, 9, 33, .85);
+        }
+
+        .redregister:hover {
+            background: rgba(100, 9, 33, 1)
+        }
+
+        .yellowregister {
+            background: #b17c31;
+            margin: 10px 0;
+        }
+
+        .yellowregister:hover {
+            background: #c18c41;
+        }
+
+        #quotecontent {
+            min-height: 12vh;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding:1em;
+        }
+
+        #quote {
+            color: white; 
+            font-size: 30px; 
+            width: 90%; 
+            max-width: 850px;
+            margin-top: 5vh;
+            padding:1em;
+        }
+
+        #person-quoted {
+            color: white; 
+            font-size: 20px; 
+            width: 90%; 
+            max-width: 850px;
+            margin-bottom: 10vh;
+        }
+
+        #contentblock {
+            width: 100vw;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding:2em;
+        }
+
+        #infolist {
+            list-style: disc inside;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            display:inline-block;
+            
+            
+        }
+        .nowrap {
+            white-space: nowrap;
+            
+        }
+        
+
+        @media only screen and (max-width: 1100px) {
+            #contentblock {
+                justify-content: center;
+            }
+            #quotecontent {
+                justify-content: center;
+            }
+
+            #quote {
+                text-align: center;
+            }
+
+
+            
+        }
+        @media only screen and (max-width: 768px) {
+            #titleinfo h1 {
+                font-size: 8vmin;
+            }
+            #titleinfo h3 {
+                font-size: 5vmin;
+            }
+            #titleinfo h4 {
+                font-size: 4vmin;
+            }
+        }
+        }
+
+    </style>
+
+    <!-- TITLE BLOCK -->
+    <div id="titleblock">
+        <div style="background:rgba(0, 0, 0, 0.5); width: 100%; margin-left: auto; margin-right: auto;">
+            <h1 style="color:white; -webkit-text-stroke-width: .1px; -webkit-text-stroke-color:white; font-weight:100;">Japan Shingo Study Tour</h1>
+        </div>
+        <br>
+        <div class="registerbutton redregister">
+            <a href='http://www.cvent.com/events/2019-shingo-japan-study-tour/event-summary-67e2595331a0439ba7d4bde4fd1cc2b4.aspx' target='_blank'><h4 style="color: white;">LEARN MORE</h4></a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <!-- IMAGE BLOCK -->
+    <div id="titleinfo">
+        <div id="titleinfo">
+            <div style="display:inline-block;">
+                <img src="https://res.cloudinary.com/shingo/image/upload/v1560365857/WebContent/Shingo_Study_Tour.png" width="350px">
+            </div>
+            <div style="display:inline-block; padding-left:2em; vertical-align:top; padding-top:1.5em;">
+                <h4>December 7-12, 2019</h4>
+                <h4>Tokyo, Japan</h4>
+            </div>
+        </div>
+        <h4>As a participant of the Japan Shingo Study Tour, you’ll have a first-hand look at an organization’s culture through the lens of 
+            the <em>Shingo Model</em><sup style="vertical-align:super; font-size:12px;">TM</sup>. The six-day study tour comprises a series of plant tours, the Shingo executive overview workshop, 
+            seminars by Toyota executives, peer networking, and much more.
+        </h4>
+            <div class="grid-item"><img src="https://img.icons8.com/dotty/64/000000/skyscrapers.png"><h3 class="nowrap">Site Tours</h3><h5>Visit world-class facilities<br>and discover how they’ve implemented<br>principles of the <em>Shingo Model</em>.</h5></div>
+            <div class="grid-item"><img src="https://img.icons8.com/wired/64/000000/groups.png"><h3>Peer Networking</h3><h5>Connect one-on-one with<br>thought leaders, experts in the field,<br>and site managers.</h5></div>  
+            <div class="grid-item"><img src="https://img.icons8.com/ios/64/000000/light-on--v2.png"><h3 class="nowrap">Answers</h3><h5>Receive guidance and new perspective<br>from Shingo Institute executives<br>about key improvements you’d like to implement<br>in your own organization. </h5></div>
+            <div class="grid-item"><img src="https://img.icons8.com/ios/64/000000/combo-chart.png"><h3 class="nowrap">Workshops</h3><h5>Receive Hands-on training by Toyota<br>executives, as well as an overview of<br> the <em>Shingo Model</em> by your<br>Shingo Institute host.</h5></div>     
+        <br>    
+    </div>
+    <!-- END IMAGE BLOCK -->
+    <div id="contentblock">
+        <div style="
+            width: 90%;
+            max-width: 550px;
+        ">
+            <h2> About Shingo Study Tours </h2>
+            <p> Study tours with the Shingo Institute are unlike any other study tour in the industry. </p>
+            <p> You’ll visit organizations that apply Shingo principles to the workplace so you can see first-hand how to incorporate them into
+                 your own organization. You’ll learn how to assess the culture of the site through the lens of the <em>Shingo Model</em>. </p>
+            <p> You’ll discover how each site’s systems, tools, and behaviors are connected to form their culture. And you’ll learn from the
+                 experts how to look for best practices and then how to bring that knowledge back to your workplace. </p>
+            <p> Each site tour is capped at 20 participants. You’ll find that this small group of participants will become a peer networking group that you’ll keep in touch with for years. </p>
+            <h2> What is Included on a Shingo Study Tour </h2>
+            <ul id="infolist">
+                <li> A workshop on the Shingo Model and behavior assessment </li>
+                <li> 1 to 3 seminars given by Toyota executives </li>
+                <li> Question and Answer sessions with each site’s management team  </li>
+                <li> Six nights hotel accommodations </li>
+                <li> Daily breakfast and lunch, plus one dinner </li>
+                <li> Transportation to all site visits </li>
+            </ul>
+            <p style="color:#555555; margin-top:25px;">*Ritsuo Shingo, son of Shigeo Shingo, renowned industrial engineer and Toyota adviser, will accompany participants throughout the six-day tour.</p>
+        </div>
+        <!-- YOUTUBE VIDEO IFRAME -->
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/H0NzCwTGnxc" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+    <br>
+    <!-- QUOTE BLOCK -->
+    <div style="
+        width: 100vw;
+        background: rgb(50, 65, 80);
+    ">
+        <div id="quotecontent">
+            <p id="quote">"The Shingo Study Tour was an incredible eye opening experience, it was like the Disney World of Lean.”</p><em id='person-quoted'> ~ Nicole Blanco, Manufacturing Engineer, Membrane VSM, SUEZ Water Technologies and Solutions </em> 
+            <div class="registerbutton yellowregister">
+                <a href='http://www.cvent.com/events/2019-shingo-japan-study-tour/event-summary-67e2595331a0439ba7d4bde4fd1cc2b4.aspx' target='_blank'><h4 style="color: white;">LEARN MORE</h4></a>
+            </div>
+            <p id="quote">"The tour opened my eyes to what is possible. Lean is simple and hard.”</p><em id='person-quoted'> ~ Philip Draper, Continuous Improvement Manager, STERIS Corporation </em>
+
+            <p id="quote">“Listening to high-level companies share their CI and lean journey and how they incorporate Shingo principles was invaluable. I found immediate areas of 
+                improvement for my own work as well as long-term goals of growing a culture that supports continuous improvement.”</p><em id='person-quoted'> ~ Jason Nate, Principal, Kimberly Area School District </em>
+            
+        </div>
+    </div>
+</article>

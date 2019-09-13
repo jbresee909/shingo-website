@@ -1,0 +1,13 @@
+<div class="row">
+  <h2>{{conference}}</h2>
+  {{#if files}}
+  <ul>
+    {{#each files}}
+      <li class="roboto"><a href="{{this.file}}" target="_blank">{{this.name}}</a></li>
+    {{/each}}
+  </ul>
+  {{else}}
+    No files to download. Please check back later...
+    <br><br><br><br>
+  {{/if}}
+</div>

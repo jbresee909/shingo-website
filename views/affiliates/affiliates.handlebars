@@ -1,0 +1,144 @@
+<article class="container" id="affiliates">
+    <div class="row">
+        <div class="nine centered columns text-center">
+            <div class="text-center affLicensedLogo">
+              <img src="../images/licensedAffiliateLogo.png">
+            </div>
+            <br>
+            <h2 class="quattrocento">Meet Our Affiliates</h2>
+            <h4>Shingo Licensed Affiliates bring years of experience and a wide array of expertise to clients. Their Certified Shingo Facilitators promote and teach the <em>Shingo Model™</em> all over the world by teaching the five <a href="../education">Shingo workshops.</a></h4>
+            <br>
+            <div class="medium primary btn"><a href="../workshops">See the Workshop Schedule</a></div>
+            <br>
+            <br>
+            <h5>Click the link to each Shingo Licensed Affiliate below to learn the specialties and regions in which each teaches. Contact information for affiliate appears on their respective pages.</h5>
+        </div>
+    </div>
+    <br>
+    <div class="display-row">
+        {{#each affiliates}}
+            {{>_affiliate-card}}
+        {{/each}}
+    </div>
+</article>
+
+        {{!-- <!-- Small Screen -->
+        <ul class="afflist centered show-for-small">
+            {{#each affiliates}}
+                <li>
+                    <div class="row">
+                        <div class="twelve columns centered">
+                            <a href="affiliates/{{Id}}">
+                                <div class="text-center">
+                                    <img style="max-height: 200px" src="{{Logo__c}}" alt="{{Name}}">
+                                </div>
+                                <h4>{{Name}}</h4>
+                                <p>LANGUAGES: {{Languages__c}} </p>
+                                <br>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            {{/each}}
+        </ul> --}}
+<article class="container" id="providers">
+    <div class="row">
+        <div class="nine centered columns text-center">
+            <h2 class="quattrocento">Licensed Online Provider</h2>
+            <h5><i class="icon-dot"></i> <i class="icon-dot"></i> <i class="icon-dot"></i></h5>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <ul class="text-center">
+            <li>
+                <div class="row">
+                    <div class="twelve columns centered">
+                        <a href="affiliates/0011200001Gl4QoAAJ">
+                            <div class="text-center">
+                                <img src="{{myeducator.Logo__c}}" alt="{{myeducator.Name}}">
+                            </div>
+                            <h4>{{myeducator.Name}}</h4>
+                        </a>
+                        <p>LANGUAGES: {{myeducator.Languages__c}}</p>
+                        <br>
+                        <!-- Yes.. This section is a bit trivial.. I know. -->
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</article>
+<article class="container" id="becomeAFF">
+    <div class="row">
+        <br>
+        <div class="text-center affLicensedLogo">
+          <img src="../images/licensedAffiliateLogo.png">
+        </div>
+        <br>
+        <h2 class="text-center">Interested in becoming a Shingo Licensed Affiliate?</h2>
+        <br>
+        <p>Shingo Licensed Affiliates are organizations that are well established in targeted regions around the world and are heavily involved in leading organizations to enterprise excellence through cultural transformation. Shingo Licensed Affiliates are also well-versed in the <em>Shingo Model™</em> and assessment methodology and are authorized to teach the Shingo workshops.</p>
+        <p>
+            Consulting organizations interested in becoming a Shingo Licensed Affiliate should have expertise in the following areas:
+            <ul style="list-style: disc inside; padding-left: 50px;">
+                <li>Lean</li>
+                <li>Continuous improvement</li>
+                <li>Operational excellence</li>
+                <li>Enterprise excellence</li>
+                <li>Executive coaching and training</li>
+            </ul>
+        </p>
+        <p>
+            Shingo Certified Facilitators are individuals within affiliate organizations that are authorized to teach the Shingo workshops. Shingo certified facilitators should meet the following qualifications:
+            <ul style="list-style: disc inside; padding-left: 50px;">
+                <li>7-10 years of Lean and operational excellence leadership experience</li>
+                <li>Training, development, and consulting experience in Lean and operational excellence</li>
+                <li>Completion of all Shingo workshops</li>
+                <li>Completion of Shingo facilitator certification training</li>
+            </ul>
+        </p>
+        <p>If your organization meets these qualifications and is interested in becoming a Shingo Licensed Affiliate, please click the Apply Now button below.</p>
+        <div class="text-center">
+            <div class="medium primary btn"><a href="https://usu.co1.qualtrics.com/SE/?SID=SV_3V28dNiGxpde1ZH" target="_blank">Apply now</a></div>
+        </div>
+        <p>The following resources are available for potential affiliate organizations to become more familiar with the work and mission of the Shingo Institute. Click any of the following links to learn more.</p>
+        <br>
+        <div class="row">
+            <div class="six columns text-center">
+                <h4 class="quattrocento">The <em>Shingo Model</em> booklet</h4>
+                <img width="200" src="http://res.cloudinary.com/shingo/image/upload/v1519937693/Cover_fxzbgs.png">
+                <br>
+                <div class="medium secondary btn"><a href="/model#download">Learn More</a></div>
+            </div>
+            <div class="six columns text-center">
+                <h4 class="quattrocento"><em>Discover Excellence</em></h4>
+                <img width="200" src="https://images.tandf.co.uk/common/jackets/amazon/978113862/9781138626164.jpg" alt="">
+                <br>
+                <div class="medium info rounded btn"><a href="/model#download" target="_new">Learn More</a></div>
+            </div>
+        </div>
+    </div>
+</article>
+{{!-- <script>
+    $(document).ready(function(e) {
+        $('ul.afflist').each(function() {
+            // get current ul
+            var $ul = $(this);
+            // get array of list items in current ul
+            var $liArr = $ul.children('li');
+            // Sort the array of li elements
+            var m = $liArr.length,
+                t, i;
+            $liArr.detach();
+            while (m) {
+                i = Math.floor(Math.random() * m--);
+                t = $liArr[m];
+                $liArr[m] = $liArr[i];
+                $liArr[i] = t;
+            }
+            // Attach the randomized li elements back to the ul
+            $liArr.appendTo($ul);
+        });
+    });
+</script> --}}

@@ -1,0 +1,32 @@
+{
+    "name": "2017 European Conference",
+    "date": "October 16 - October 18, 2017",
+    "logo": "http://res.cloudinary.com/shingo/image/upload/c_scale,h_150/v1489519564/Events/RegionalConference/2017/European%20Conference/Europe-Logo.png",
+    "background_image": "http://res.cloudinary.com/shingo/image/upload/v1487963232/Events/RegionalConference/2017/brussels_evening.jpg",
+    "location": "Brussels, Belgium",
+    "intro": "Come and learn from people who have made notable transformations in their organizations on their road to enterprise excellence. Each year we are joined by leaders from all around Europe to learn what others are doing and have successfully done to improve their organization. Along with renowned keynote speakers, you will get an opportunity to participate in breakout sessions where you can ask questions and discuss with experienced leaders and business professionals. Whatever the industry may be, people with a desire to improve business should attend.",
+    "presentation_copy": "The language of the Conference is English.",
+    "agenda": [],
+    "registration": {
+        "link": "http://www.cvent.com/d/05qj9g/4W",
+        "prices": [
+            {
+                "type": "Main Conference",
+                "price": "$1,330 USD includes 21% VAT"
+            }
+        ]
+    },
+    "se_info": "",
+    "travel": {},
+    "speaker_query": "",
+    "ta_info": {
+        "title": "This year's European Conference will be held in Brussels, Belgium",
+        "location": "<div><strong>Hotel Metropole Brussels</strong><br>Place de Brouckère 31<br>1000 Brussels<br><a href='http://www.metropolehotel.com' target='blank'>www.metropolehotel.com<br>+32 2 217 23 00<br></div>",
+        "travel": "<div>Public parking opposite the hotel<br>1 km from Brussels Central Train Station<br>2.2 km from Brussels South Train Station<br>9.3 km from Brussels International Airport (BRU)</div>",
+        "hotel": "<div>Room rate: Superior single room 175 Euro (includes breakfast in Jardin Indien Restaurant and six free mini bar drinks)<br><br>Double occupancy rate is an addition 28 euro per night. Please call hotel directly to reserve hotel.  Please ask for the Shingo group rate.</div>",
+        "parking": "<div>Parking is available at the hotel for free.</div>",
+        "internet": "<div><!--block-->Complimentary Wi-Fi Internet access is available at the hotel for conference participants.</div>",
+        "things": ""
+    },
+    "filename": "europe.json"
+}

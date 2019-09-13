@@ -1,0 +1,54 @@
+  <!-- InstanceBeginEditable name="main" -->
+  <article class="container" id="challenge-research">
+    <div class="row">
+        <div class="text-center">
+          <img src="https://res.cloudinary.com/shingo/image/upload/c_scale,w_300/v1478283005/WebDesign/Logos/Research-Award-Logo.png" alt="Research Award Logo" />
+        </div>
+        <div class="nine centered text-center columns">
+            <h2 class="quattrocento">Shingo Research Award</h2>
+            <h4>This award recognizes and promotes research and writing that has had a significant impact and advances the body of knowledge regarding operational excellence. The Shingo Institute is most interested in recognizing thought leadership.</h4>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+  		<h4><strong>Award Criteria</strong></h4>
+      <h6>Submissions are assessed based on the following criteria:</h6>
+  		<ul class="square">
+  			<li>Content – contributes new operational excellence knowledge, or significantly extends and supports existing operational excellence knowledge</li>
+  			<li>Significant Impact – documented by the number and quality of citations in scholarly literature (excluding self-citation), reviews in specific relevant journals, or business performance improvements. The submission’s actual impact is an important element of the assessment criteria; therefore, research may not be eligible if appropriate documentation of impact is not provided.</li>
+  			<li>Premise</li>
+  			<li>Presentation</li>
+        <li>Approach</li>
+  		</ul>
+  		<h6>Types of accepted submission include:</h6>
+  		<ul class="square">
+  			<li>Books</li>
+  			<li>Articles</li>
+  			<li>Case studies</li>
+  		</ul>
+
+  		<p><strong>All works must be published at the time of submission. Applications are accepted continuously throughout the year.</strong></p>
+      <div class="row text-center">
+        <div class="medium secondary rounded btn"><a href="assets/Research-Award-Application-Form.pdf" target="_blank">Research Award Application</a></div>
+      </div>
+      <br>
+      <div class="twelve columns">
+          <table class="striped">
+            <tbody>
+                <tr>
+                    <td colspan="4"><h4 class="roboto"><strong>Research Award</strong> Recipients</h4></td>
+                </tr>
+                <tr>
+                  <td>Date</td>
+                  <td colspan="2">Title - <em>Click for Press Release</em></td>
+                  <td>Author</td>
+                </tr>
+                {{#each awards}}
+      		        {{>_recipient-table this}}
+                {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </article>
+  <!-- InstanceEndEditable -->
